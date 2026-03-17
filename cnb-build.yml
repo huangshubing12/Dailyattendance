@@ -1,0 +1,26 @@
+version: "1.0"
+name: "30day-self-healing"
+description: "30天自愈式打卡小程序"
+
+environment:
+  node_version: "20"
+  package_manager: "pnpm"
+
+build:
+  command: "pnpm build"
+  output_dir: ".next"
+  static_dir: "public"
+
+deploy:
+  runtime: "nodejs"
+  port: 3000
+  env_vars:
+    NODE_ENV: "production"
+
+routes:
+  - path: "/*"
+    type: "static"
+
+hooks:
+  post_deploy:
+    - echo "部署完成"
