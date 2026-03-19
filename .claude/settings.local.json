@@ -8,7 +8,9 @@
       "Bash(git push:*)",
       "Bash(git remote:*)",
       "Bash(npm run:*)",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "Bash(git config:*)",
+      "Bash(GIT_ASKPASS= GIT_TERMINAL_PROMPT=0 git push github main 2>&1)"
     ]
   }
 }
