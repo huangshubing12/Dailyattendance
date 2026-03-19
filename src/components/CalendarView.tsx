@@ -1,5 +1,5 @@
 import { useStore } from '@/store';
-import { CATEGORY_COLORS } from '@/store/types';
+import { CATEGORY_COLORS, TaskCategory } from '@/store/types';
 
 export function CalendarView() {
   const progress = useStore(state => state.progress);
@@ -47,7 +47,7 @@ export function CalendarView() {
           const day = i + 1;
           const status = getDayStatus(day);
           const category = getTaskCategory(day);
-          const color = category ? CATEGORY_COLORS[category] : undefined;
+          const color = category ? CATEGORY_COLORS[category as TaskCategory] : undefined;
 
           const getBgColor = () => {
             if (status === 'completed') return 'bg-success/20';

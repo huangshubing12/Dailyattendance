@@ -4,7 +4,10 @@
       "Bash(pnpm install:*)",
       "Bash(pnpm dev:*)",
       "Bash(sd:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(npm run:*)"
     ]
   }
 }
