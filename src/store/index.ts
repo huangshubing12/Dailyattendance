@@ -8,8 +8,8 @@ import type {
   DailyTaskRecord,
   SmallTask,
   HealingQuote,
-  MAX_SWITCHES_PER_DAY,
 } from './types';
+import { MAX_SWITCHES_PER_DAY } from './types';
 import { parseISO, differenceInDays, startOfDay } from 'date-fns';
 
 // ============ 本地存储工具函数 ============
@@ -136,7 +136,7 @@ export const useStore = create<AppState>((set, get) => ({
 
       const randomTask = availableTasks[Math.floor(Math.random() * availableTasks.length)];
 
-      taskRecord: DailyTaskRecord = {
+      const taskRecord: DailyTaskRecord = {
         dayIndex: currentDay,
         taskId: randomTask.id,
         taskContent: randomTask.content,

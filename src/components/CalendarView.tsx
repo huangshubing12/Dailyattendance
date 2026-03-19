@@ -25,7 +25,7 @@ export function CalendarView() {
   return (
     <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-gray-100">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-foreground">打卡日历</h3>
+        <h3 className="text-lg font-semibold text-foreground">📆 打卡日历</h3>
         <p className="text-sm text-muted-foreground mt-1">
           已完成 {completedDays.size} / 30 天
         </p>

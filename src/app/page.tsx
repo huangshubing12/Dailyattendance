@@ -29,7 +29,7 @@ export default function HomePage() {
       <header className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-lg mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-xl font-bold text-foreground">
-            每天一件小事
+            30 天自愈式打卡挑战工具
           </h1>
           <div className="flex items-center gap-2">
             <Link href="/history">
@@ -80,7 +80,7 @@ export default function HomePage() {
           {progress && progress.completedDays.length > 0 && (
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h2 className="text-lg font-semibold text-foreground mb-4">
-                最近打卡
+                📝 最近打卡
               </h2>
               <HistoryList limit={3} />
             </div>

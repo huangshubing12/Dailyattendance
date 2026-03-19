@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { useStore } from '@/store';
 import { HistoryList } from '@/components/HistoryList';
 import { CalendarView } from '@/components/CalendarView';
-import { Button } from './components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import { ArrowLeft, RotateCcw } from 'lucide-react';
 import Link from 'next/link';
 
@@ -29,7 +29,7 @@ export default function HistoryPage() {
             </Button>
           </Link>
           <h1 className="text-lg font-semibold text-foreground">
-            历史记录
+            📅 历史记录
           </h1>
           <div className="w-8" /> {/* 占位保持居中 */}
         </div>
@@ -56,7 +56,7 @@ export default function HistoryPage() {
           {/* 历史列表 */}
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <h2 className="text-lg font-semibold text-foreground mb-4">
-              打卡详情
+              📋 打卡详情
             </h2>
             <HistoryList />
           </div>
